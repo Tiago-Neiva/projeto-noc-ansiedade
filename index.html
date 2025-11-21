@@ -24,6 +24,7 @@
       <a href="#estrategias">Estratégias</a>
       <a href="#respirar">Respiração</a>
       <a href="#checklist">Checklist</a>
+      <a href="#mindfulness">Mindfulness</a>
       <a href="#protocolos">Protocolos</a>
       <a href="#questionario">Questionário</a>
       <a href="#recursos">Recursos</a>
@@ -40,11 +41,12 @@
       <div class="cta-row">
         <a class="btn" href="#questionario">Fazer Questionário</a>
         <a class="btn ghost" href="#estrategias">Ver Estratégias</a>
+        <a class="btn ghost" href="#mindfulness">Exercícios</a>
       </div>
     </div>
     <div class="hero-img">
       <div class="img-placeholder">
-        <span>Ambiente de Monitoramento NOC</span>
+        <span>🖥️ Ambiente de Monitoramento NOC</span>
       </div>
     </div>
   </section>
@@ -53,162 +55,436 @@
     <h3>📋 Por que este projeto é importante?</h3>
     <p>Este espaço foi criado para <strong>você, operador do NOC</strong>. Reconhecemos os desafios únicos do trabalho noturno e queremos oferecer apoio concreto.</p>
     <div class="alert-box">
-      <strong>Lembre-se:</strong> Buscar ajuda é um ato de coragem, não de fraqueza.
+      <strong>💡 Lembre-se:</strong> Buscar ajuda é um ato de coragem, não de fraqueza. Sua saúde mental importa!
     </div>
   </section>
 
   <section id="sobre" class="card">
-    <h3>Sobre este projeto</h3>
+    <h3>👨‍💻 Sobre este projeto</h3>
     <p>Desenvolvido por <strong>Tiago de Jesus Neiva</strong> para apoiar operadores do NOC STTE - Embratel - Bahia. Foco em prevenção, identificação de sinais e recomendações práticas para melhorar o bem-estar no contexto 12x36 noturno.</p>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">12x36</div>
+        <div class="stat-label">Escala de Trabalho</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">7</div>
+        <div class="stat-label">Sintomas Monitorados</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">ODS 3</div>
+        <div class="stat-label">Saúde e Bem-estar</div>
+      </div>
+    </div>
   </section>
 
   <section id="causas" class="card split">
     <div class="col">
-      <h3>Causas e fatores de risco</h3>
-      <ul>
-        <li>Alteração do ritmo circadiano e sono fragmentado</li>
-        <li>Pressão por resolução rápida de incidentes</li>
-        <li>Turnos prolongados e rotação inadequada</li>
-        <li>Isolamento social e falta de apoio</li>
-        <li>Exposição constante a situações de alta pressão</li>
+      <h3>🔍 Causas e fatores de risco</h3>
+      <ul class="styled-list">
+        <li>🌙 Alteração do ritmo circadiano e sono fragmentado</li>
+        <li>⚡ Pressão por resolução rápida de incidentes</li>
+        <li>🕒 Turnos prolongados e rotação inadequada</li>
+        <li>👥 Isolamento social e falta de apoio</li>
+        <li>💥 Exposição constante a situações de alta pressão</li>
+        <li>📊 Sobrecarga de informações e monitoramento</li>
+        <li>🌃 Falta de exposição à luz natural</li>
       </ul>
     </div>
     <div class="col">
-      <div class="fit-img">
-        <div class="img-placeholder">
-          <span>Ritmo Circadiano</span>
+      <div class="interactive-chart">
+        <h4>📈 Impacto do Trabalho Noturno</h4>
+        <div class="chart-bar">
+          <div class="bar-label">Qualidade do Sono</div>
+          <div class="bar-container">
+            <div class="bar-fill sleep-bar" data-value="75">75%</div>
+          </div>
+        </div>
+        <div class="chart-bar">
+          <div class="bar-label">Níveis de Estresse</div>
+          <div class="bar-container">
+            <div class="bar-fill stress-bar" data-value="85">85%</div>
+          </div>
+        </div>
+        <div class="chart-bar">
+          <div class="bar-label">Vida Social</div>
+          <div class="bar-container">
+            <div class="bar-fill social-bar" data-value="60">60%</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="sintomas" class="card">
-    <h3>Sintomas de ansiedade mais comuns</h3>
-    <div class="grid-3">
-      <div class="info">
-        <div class="info-icon">💓</div>
-        <h4>Físicos</h4>
-        <ul>
-          <li>Insônia</li>
-          <li>Fadiga constante</li>
-          <li>Palpitações</li>
-          <li>Tensão muscular</li>
-        </ul>
+    <h3>⚠️ Sintomas de ansiedade mais comuns</h3>
+    <div class="symptoms-tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="fisicos">Físicos</button>
+        <button class="tab-btn" data-tab="cognitivos">Cognitivos</button>
+        <button class="tab-btn" data-tab="comportamentais">Comportamentais</button>
       </div>
-      <div class="info">
-        <div class="info-icon">🧠</div>
-        <h4>Cognitivos</h4>
-        <ul>
-          <li>Falta de foco</li>
-          <li>Preocupação constante</li>
-          <li>Dificuldade de memória</li>
-          <li>Pensamentos acelerados</li>
-        </ul>
+      
+      <div class="tab-content active" id="fisicos">
+        <div class="symptoms-grid">
+          <div class="symptom-item">
+            <span class="symptom-icon">😴</span>
+            <span class="symptom-text">Insônia ou sono fragmentado</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">💓</span>
+            <span class="symptom-text">Palpitações cardíacas</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">💪</span>
+            <span class="symptom-text">Tensão muscular</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">🥱</span>
+            <span class="symptom-text">Fadiga constante</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">🤢</span>
+            <span class="symptom-text">Problemas digestivos</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">😫</span>
+            <span class="symptom-text">Dores de cabeça</span>
+          </div>
+        </div>
       </div>
-      <div class="info">
-        <div class="info-icon">😔</div>
-        <h4>Comportamentais</h4>
-        <ul>
-          <li>Irritabilidade</li>
-          <li>Evitação de situações</li>
-          <li>Isolamento social</li>
-          <li>Mudanças no apetite</li>
-        </ul>
+      
+      <div class="tab-content" id="cognitivos">
+        <div class="symptoms-grid">
+          <div class="symptom-item">
+            <span class="symptom-icon">🎯</span>
+            <span class="symptom-text">Dificuldade de concentração</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">💭</span>
+            <span class="symptom-text">Preocupação excessiva</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">📝</span>
+            <span class="symptom-text">Esquecimento frequente</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">⚡</span>
+            <span class="symptom-text">Pensamentos acelerados</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">⚠️</span>
+            <span class="symptom-text">Antecipação de problemas</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">🔍</span>
+            <span class="symptom-text">Hipervigilância</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="comportamentais">
+        <div class="symptoms-grid">
+          <div class="symptom-item">
+            <span class="symptom-icon">😠</span>
+            <span class="symptom-text">Irritabilidade</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">🚫</span>
+            <span class="symptom-text">Evitação de situações</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">👤</span>
+            <span class="symptom-text">Isolamento social</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">🍽️</span>
+            <span class="symptom-text">Mudanças no apetite</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">🔄</span>
+            <span class="symptom-text">Comportamentos repetitivos</span>
+          </div>
+          <div class="symptom-item">
+            <span class="symptom-icon">⏰</span>
+            <span class="symptom-text">Procrastinação</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="estrategias" class="card">
-    <h3>Estratégias práticas para operadores</h3>
-    <div class="grid-2">
-      <div class="strategy-card">
-        <h4>Antes do turno</h4>
-        <ul>
-          <li>Cochilos programados e rotina de sono</li>
-          <li>Refeição leve e hidratação adequada</li>
-          <li>Exposição à luz branca antes do turno</li>
-          <li>Preparação mental para o período noturno</li>
-        </ul>
+    <h3>🛠️ Estratégias práticas para operadores</h3>
+    <div class="strategy-timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker">🌅</div>
+        <div class="timeline-content">
+          <h4>Antes do turno</h4>
+          <ul>
+            <li>💤 Cochilos programados (20-30 min antes do turno)</li>
+            <li>🍎 Refeição leve e hidratação adequada</li>
+            <li>💡 Exposição à luz branca 1h antes do turno</li>
+            <li>🧘 Preparação mental com 5min de meditação</li>
+            <li>📋 Checklist de equipamentos e tarefas</li>
+          </ul>
+        </div>
       </div>
-      <div class="strategy-card">
-        <h4>Durante o turno</h4>
-        <ul>
-          <li>Pausas curtas e alongamentos regulares</li>
-          <li>Técnicas de respiração (4-7-8)</li>
-          <li>Agenda de tarefas e checklist organizado</li>
-          <li>Hidratação constante e alimentação leve</li>
-        </ul>
+      
+      <div class="timeline-item">
+        <div class="timeline-marker">🌃</div>
+        <div class="timeline-content">
+          <h4>Durante o turno</h4>
+          <ul>
+            <li>⏸️ Pausas de 5min a cada 45min</li>
+            <li>🧘 Técnicas de respiração 4-7-8</li>
+            <li>💧 Hidratação constante (1 copo/hora)</li>
+            <li>🏃 Alongamentos a cada 2 horas</li>
+            <li>🎵 Música ambiente para concentração</li>
+            <li>📊 Gestão de alertas por prioridade</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="strategy-card" style="margin-top:20px;">
-      <h4>Após o turno</h4>
-      <ul>
-        <li>Ambiente escuro e silencioso para dormir</li>
-        <li>Evitar telas e cafeína nas horas finais</li>
-        <li>Atividades relaxantes: leitura, música suave</li>
-        <li>Rotina consistente de descanso</li>
-      </ul>
+      
+      <div class="timeline-item">
+        <div class="timeline-marker">🌄</div>
+        <div class="timeline-content">
+          <h4>Após o turno</h4>
+          <ul>
+            <li>🌑 Ambiente escuro e silencioso para dormir</li>
+            <li>📵 Evitar telas 1h antes de dormir</li>
+            <li>☕ Sem cafeína nas últimas 4 horas</li>
+            <li>📖 Atividades relaxantes: leitura, música suave</li>
+            <li>🛀 Rotina de relaxamento pós-turno</li>
+            <li>📅 Horários consistentes de descanso</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="respirar" class="card">
     <h3>🧘 Exercício de Respiração 4-7-8</h3>
     <div class="breathing-exercise">
-      <div class="breathing-circle" id="breathCircle">
-        <span>INSPIRE</span>
+      <div class="breathing-visual">
+        <div class="breathing-circle" id="breathCircle">
+          <span class="breath-text">INSPIRE</span>
+          <div class="breath-counter" id="breathCounter">4</div>
+        </div>
+        <div class="breathing-progress">
+          <div class="progress-step" id="step1">Inspirar</div>
+          <div class="progress-step" id="step2">Segurar</div>
+          <div class="progress-step" id="step3">Expirar</div>
+        </div>
       </div>
-      <div class="breathing-steps">
-        <p>1. Inspire pelo nariz contando até 4</p>
-        <p>2. Segure a respiração contando até 7</p>
-        <p>3. Expire pela boca contando até 8</p>
+      <div class="breathing-controls">
+        <button class="btn breathing-btn" id="startBreathing">
+          <span class="btn-icon">🎯</span>
+          Iniciar Exercício
+        </button>
+        <button class="btn ghost breathing-btn" id="pauseBreathing">
+          <span class="btn-icon">⏸️</span>
+          Pausar
+        </button>
       </div>
-      <button class="btn" id="startBreathing">Iniciar Exercício</button>
+      <div class="breathing-stats">
+        <div class="stat">
+          <span class="stat-value" id="completedSessions">0</span>
+          <span class="stat-label">Sessões</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="totalTime">0</span>
+          <span class="stat-label">Minutos</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="checklist" class="card">
     <h3>✅ Checklist de Bem-Estar Diário</h3>
     <div class="checklist-container">
-      <div class="checklist-item">
-        <input type="checkbox" id="check1">
-        <label for="check1">⏰ Respeitei minha rotina de sono</label>
+      <div class="checklist-header">
+        <span>Progresso Diário</span>
+        <span id="checklistProgress">0%</span>
       </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="check2">
-        <label for="check2">💧 Bebi água suficiente durante o turno</label>
+      <div class="checklist-progress-bar">
+        <div class="checklist-progress-fill" id="checklistProgressFill"></div>
       </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="check3">
-        <label for="check3">🏃 Fiz pausas para alongamento</label>
+      
+      <div class="checklist-category">
+        <h4>🌅 Rotina Matinal</h4>
+        <div class="checklist-item">
+          <input type="checkbox" id="check1" class="checklist-checkbox">
+          <label for="check1">⏰ Acordei no horário planejado</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check2" class="checklist-checkbox">
+          <label for="check2">💧 Bebi água ao acordar</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check3" class="checklist-checkbox">
+          <label for="check3">☀️ Tomei 15min de sol</label>
+        </div>
       </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="check4">
-        <label for="check4">🍎 Alimentei-me de forma adequada</label>
+      
+      <div class="checklist-category">
+        <h4>🌃 Durante o Turno</h4>
+        <div class="checklist-item">
+          <input type="checkbox" id="check4" class="checklist-checkbox">
+          <label for="check4">💧 Mantive hidratação constante</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check5" class="checklist-checkbox">
+          <label for="check5">🏃 Fiz pausas para alongamento</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check6" class="checklist-checkbox">
+          <label for="check6">🍎 Alimentei-me de forma adequada</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check7" class="checklist-checkbox">
+          <label for="check7">😌 Pratiquei técnicas de relaxamento</label>
+        </div>
       </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="check5">
-        <label for="check5">😌 Pratiquei técnicas de relaxamento</label>
+      
+      <div class="checklist-category">
+        <h4>🌄 Após o Turno</h4>
+        <div class="checklist-item">
+          <input type="checkbox" id="check8" class="checklist-checkbox">
+          <label for="check8">📱 Evitei excesso de telas antes de dormir</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check9" class="checklist-checkbox">
+          <label for="check9">🛀 Fiz minha rotina de relaxamento</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check10" class="checklist-checkbox">
+          <label for="check10">🌙 Dormi horas suficientes</label>
+        </div>
       </div>
-      <div class="checklist-item">
-        <input type="checkbox" id="check6">
-        <label for="check6">📱 Evitei excesso de telas antes de dormir</label>
+      
+      <div class="checklist-actions">
+        <button class="btn ghost" id="resetChecklist">
+          <span class="btn-icon">🔄</span>
+          Reiniciar Checklist
+        </button>
+        <button class="btn" id="saveChecklist">
+          <span class="btn-icon">💾</span>
+          Salvar Progresso
+        </button>
       </div>
     </div>
   </section>
 
+  <section id="mindfulness" class="card">
+  <h3>🎯 Exercícios de Mindfulness</h3>
+  <div class="mindfulness-grid">
+    <div class="mindfulness-card">
+      <div class="mindfulness-icon">💪</div>
+      <h4>Alongamento Rápido</h4>
+      <p>Exercícios de 2min para fazer durante as pausas</p>
+      <div class="stretching-controls">
+        <div class="stretch-exercise">
+          <div class="stretch-icon">🙆‍♂️</div>
+          <div class="stretch-content">
+            <strong>Alongamento de Braços</strong>
+            <p>Estique os braços para cima por 30 segundos</p>
+          </div>
+        </div>
+        <div class="stretch-exercise">
+          <div class="stretch-icon">🦵</div>
+          <div class="stretch-content">
+            <strong>Alongamento de Pernas</strong>
+            <p>Alongue as pernas alternadamente por 30 segundos cada</p>
+          </div>
+        </div>
+        <div class="stretch-exercise">
+          <div class="stretch-icon">👀</div>
+          <div class="stretch-content">
+            <strong>Exercício para os Olhos</strong>
+            <p>Descanse a vista olhando para longe por 1 minuto</p>
+          </div>
+        </div>
+        <button class="btn small" id="startStretching">
+          <span class="btn-icon">⏱️</span>
+          Iniciar Rotina (2min)
+        </button>
+      </div>
+    </div>
+    
+    <div class="mindfulness-card">
+      <div class="mindfulness-icon">🕒</div>
+      <h4>Timer de Descanso</h4>
+      <p>Programe pausas regulares durante o turno</p>
+      <div class="timer-controls">
+        <select id="timerSelect" class="timer-select">
+          <option value="5">5 minutos</option>
+          <option value="10">10 minutos</option>
+          <option value="15">15 minutos</option>
+          <option value="20">20 minutos</option>
+        </select>
+        <button class="btn small" id="startTimer">⏱️ Iniciar</button>
+        <div class="timer-display" id="timerDisplay">--:--</div>
+      </div>
+    </div>
+    
+    <div class="mindfulness-card">
+      <div class="mindfulness-icon">📝</div>
+      <h4>Diário de Gratidão</h4>
+      <p>Registre 3 coisas positivas do seu dia</p>
+      <div class="gratitude-journal">
+        <textarea id="gratitudeText" placeholder="1. ✅ Incidente resolvido com sucesso...
+2. 💡 Aprendi algo novo hoje...
+3. 👥 Recebi apoio da equipe..." rows="4"></textarea>
+        <button class="btn small" id="saveGratitude">💾 Salvar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
   <section id="protocolos" class="card">
-    <h3>Protocolos sugeridos para o NOC</h3>
-    <ol class="protocol-list">
-      <li>Pausas escalonadas com cobertura operacional garantida</li>
-      <li>Dupla checagem em ações críticas após longos incidentes</li>
-      <li>Rotação inteligente de plantões para evitar acúmulo de turnos noturnos</li>
-      <li>Linha de apoio confidencial com RH/Saúde Ocupacional</li>
-      <li>Ambiente físico otimizado para conforto e produtividade</li>
-    </ol>
+    <h3>📋 Protocolos sugeridos para o NOC</h3>
+    <div class="protocols-grid">
+      <div class="protocol-card">
+        <div class="protocol-number">01</div>
+        <h4>Pausas Escalonadas</h4>
+        <p>Pausas de 15min a cada 2 horas com cobertura operacional garantida</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-number">02</div>
+        <h4>Dupla Checagem</h4>
+        <p>Verificação em par para ações críticas após incidentes prolongados</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-number">03</div>
+        <h4>Rotação Inteligente</h4>
+        <p>Alternância de plantões para evitar acúmulo de turnos noturnos</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-number">04</div>
+        <h4>Apoio Confidencial</h4>
+        <p>Canal direto com RH/Saúde Ocupacional para suporte psicológico</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-number">05</div>
+        <h4>Ambiente Otimizado</h4>
+        <p>Iluminação adequada, ergonomia e temperatura controlada</p>
+      </div>
+      
+      <div class="protocol-card">
+        <div class="protocol-number">06</div>
+        <h4>Treinamento Contínuo</h4>
+        <p>Capacitação em gestão de estresse e saúde mental</p>
+      </div>
+    </div>
   </section>
 
   <section id="questionario" class="card">
-    <h3>Questionário de triagem (GAD-7 adaptado)</h3>
+    <h3>📊 Questionário de triagem (GAD-7 adaptado)</h3>
     <p>Responda sobre as últimas 2 semanas: 0 = nada, 1 = alguns dias, 2 = mais da metade dos dias, 3 = quase todos os dias.</p>
     
     <div class="progress-indicator">
@@ -219,98 +495,209 @@
     </div>
     
     <form id="formGAD" class="form">
-      <ol class="question-list">
-        <li>
+      <div class="question-grid">
+        <div class="question-item">
           <label>1. Sente-se nervoso/a, ansioso/a ou tenso/a?</label>
-          <input type="number" name="q1" min="0" max="3" required>
-        </li>
-        <li>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q1" value="">
+        </div>
+        
+        <div class="question-item">
           <label>2. Preocupa-se com falhas de infraestrutura ou incidentes?</label>
-          <input type="number" name="q2" min="0" max="3" required>
-        </li>
-        <li>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q2" value="">
+        </div>
+        
+        <div class="question-item">
           <label>3. Dificuldade para controlar as preocupações?</label>
-          <input type="number" name="q3" min="0" max="3" required>
-        </li>
-        <li>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q3" value="">
+        </div>
+        
+        <div class="question-item">
           <label>4. Dificuldade para dormir por preocupações do trabalho?</label>
-          <input type="number" name="q4" min="0" max="3" required>
-        </li>
-        <li>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q4" value="">
+        </div>
+        
+        <div class="question-item">
           <label>5. Sente-se cansado/a durante o turno?</label>
-          <input type="number" name="q5" min="0" max="3" required>
-        </li>
-        <li>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q5" value="">
+        </div>
+        
+        <div class="question-item">
           <label>6. Dificuldade para concentrar-se?</label>
-          <input type="number" name="q6" min="0" max="3" required>
-        </li>
-        <li>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q6" value="">
+        </div>
+        
+        <div class="question-item">
           <label>7. Medo antes de escaladas de incidentes?</label>
-          <input type="number" name="q7" min="0" max="3" required>
-        </li>
-      </ol>
-      <div class="row">
-        <button class="btn" type="submit">Calcular Pontuação</button>
-        <button class="btn ghost" type="button" id="resetBtn">Limpar Respostas</button>
+          <div class="rating-buttons">
+            <button type="button" class="rating-btn" data-value="0">0</button>
+            <button type="button" class="rating-btn" data-value="1">1</button>
+            <button type="button" class="rating-btn" data-value="2">2</button>
+            <button type="button" class="rating-btn" data-value="3">3</button>
+          </div>
+          <input type="hidden" name="q7" value="">
+        </div>
+      </div>
+      
+      <div class="form-actions">
+        <button class="btn" type="submit">
+          <span class="btn-icon">📊</span>
+          Calcular Pontuação
+        </button>
+        <button class="btn ghost" type="button" id="resetBtn">
+          <span class="btn-icon">🔄</span>
+          Limpar Respostas
+        </button>
       </div>
       <div id="resultadoGAD" class="resultado"></div>
     </form>
   </section>
 
   <section id="recursos" class="card">
-    <h3>Recursos e apoio</h3>
+    <h3>🆘 Recursos e apoio</h3>
     
     <div class="emergency-contacts">
-      <h4>🆘 Acesso Imediato a Ajuda</h4>
+      <h4>🚨 Acesso Imediato a Ajuda</h4>
       <div class="emergency-grid">
         <div class="emergency-item">
-          <strong>CVV - Centro de Valorização da Vida</strong>
-          <p>📞 188 (24h) | 💬 Chat online</p>
+          <div class="emergency-icon">📞</div>
+          <div class="emergency-content">
+            <strong>CVV - Centro de Valorização da Vida</strong>
+            <p>Ligue 188 (24h) | Chat online | WhatsApp</p>
+            <small>Atendimento gratuito e sigiloso</small>
+          </div>
         </div>
         <div class="emergency-item">
-          <strong>SAÚDE OCUPACIONAL EMBRATEL</strong>
-          <p>📞 (71) 3622-7580</p>
+          <div class="emergency-icon">🏥</div>
+          <div class="emergency-content">
+            <strong>SAÚDE OCUPACIONAL EMBRATEL</strong>
+            <p>Telefone: (71) 3622-7580</p>
+            <small>Suporte psicológico e médico</small>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="resources-grid">
-      <div class="resource-item">
-        <h4>Profissionais</h4>
-        <ul>
-          <li><a href="https://www.abp.org.br" target="_blank" rel="noopener noreferrer">ABP - Associação Brasileira de Psiquiatria</a></li>
-          <li><a href="https://www.cfp.org.br" target="_blank" rel="noopener noreferrer">CFP - Conselho Federal de Psicologia</a></li>
-          <li>Contato interno: RH / Serviço de Saúde Ocupacional - Embratel</li>
-        </ul>
+      <div class="resource-category">
+        <h4>👨‍⚕️ Profissionais</h4>
+        <div class="resource-links">
+          <a href="https://www.abp.org.br" target="_blank" class="resource-link">
+            <span class="link-icon">🎓</span>
+            ABP - Associação Brasileira de Psiquiatria
+          </a>
+          <a href="https://www.cfp.org.br" target="_blank" class="resource-link">
+            <span class="link-icon">🧠</span>
+            CFP - Conselho Federal de Psicologia
+          </a>
+          <div class="resource-link">
+            <span class="link-icon">🏢</span>
+            RH / Serviço de Saúde Ocupacional - Embratel
+          </div>
+        </div>
       </div>
-      <div class="resource-item">
-        <h4>Informações</h4>
-        <ul>
-          <li><a href="https://www.who.int" target="_blank" rel="noopener noreferrer">WHO - Organização Mundial da Saúde</a></li>
-          <li><a href="https://www.gov.br/saude" target="_blank" rel="noopener noreferrer">Ministério da Saúde</a></li>
-          <li>Cartilhas de saúde mental no trabalho</li>
-        </ul>
+      
+      <div class="resource-category">
+        <h4>📚 Informações</h4>
+        <div class="resource-links">
+          <a href="https://www.who.int" target="_blank" class="resource-link">
+            <span class="link-icon">🌍</span>
+            OMS - Organização Mundial da Saúde
+          </a>
+          <a href="https://www.gov.br/saude" target="_blank" class="resource-link">
+            <span class="link-icon">🇧🇷</span>
+            Ministério da Saúde
+          </a>
+          <a href="#" class="resource-link">
+            <span class="link-icon">📖</span>
+            Cartilhas de saúde mental no trabalho
+          </a>
+        </div>
       </div>
     </div>
 
-    <h4>Feedback</h4>
-    <p>Conte pra gente: como você lida com a ansiedade no trabalho? (anônimo)</p>
-    <form id="feedbackForm" class="form">
-      <textarea name="feedback" rows="4" placeholder="Sua resposta anônima..." required></textarea>
-      <div class="row">
-        <button class="btn" type="submit">Enviar feedback</button>
-      </div>
-      <div id="feedbackMsg" class="resultado"></div>
-    </form>
+    <div class="feedback-section">
+      <h4>💬 Feedback da Comunidade</h4>
+      <p>Compartilhe sua experiência: como você lida com a ansiedade no trabalho? (totalmente anônimo)</p>
+      <form id="feedbackForm" class="form">
+        <textarea name="feedback" rows="4" placeholder="Sua experiência, estratégias que funcionam para você, sugestões de melhoria..." required></textarea>
+        <div class="form-actions">
+          <button class="btn" type="submit">
+            <span class="btn-icon">📨</span>
+            Enviar feedback anônimo
+          </button>
+        </div>
+        <div id="feedbackMsg" class="resultado"></div>
+      </form>
+    </div>
   </section>
 
   <section id="contato" class="card">
-    <h3>Contato e autoria</h3>
-    <div class="contact-info">
-      <p><strong>Autor:</strong> Tiago de Jesus Neiva</p>
-      <p><strong>Local:</strong> NOC STTE - Embratel - Bahia</p>
-      <p><strong>Data de entrega:</strong> 22/11/2025</p>
-      <p><strong>Objetivo:</strong> ODS 3 – Saúde e Bem-estar</p>
+    <h3>👨‍💻 Contato e autoria</h3>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-icon">👤</div>
+        <div class="contact-content">
+          <strong>Autor</strong>
+          <p>Tiago de Jesus Neiva</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🏢</div>
+        <div class="contact-content">
+          <strong>Local</strong>
+          <p>NOC STTE - Embratel - Bahia</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🎯</div>
+        <div class="contact-content">
+          <strong>Objetivo</strong>
+          <p>ODS 3 – Saúde e Bem-estar</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📅</div>
+        <div class="contact-content">
+          <strong>Projeto</strong>
+          <p>Extensão Universitária</p>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -318,8 +705,14 @@
 <footer class="footer">
   <div class="wrap">
     <div class="footer-content">
-      <div>Projeto de Extensão • ODS 3 – Saúde e Bem-estar</div>
-      <div>Tiago de Jesus Neiva — NOC STTE - Embratel - Bahia</div>
+      <div class="footer-section">
+        <div class="footer-logo">NOC</div>
+        <p>Projeto de Extensão • ODS 3 – Saúde e Bem-estar</p>
+      </div>
+      <div class="footer-section">
+        <p>Tiago de Jesus Neiva — NOC STTE - Embratel - Bahia</p>
+        <p class="footer-note">💡 Lembre-se: cuidar da saúde mental é essencial para um trabalho sustentável</p>
+      </div>
     </div>
   </div>
 </footer>
